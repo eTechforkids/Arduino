@@ -1,0 +1,33 @@
+const int trig = 6;
+const int echo = 5;
+
+long duration;
+int distance;
+void setup() {
+pinMode(8,OUTPUT);//red led
+pinMode(7, OUTPUT);//green led
+pinMode(trig, OUTPUT); 
+pinMode(echo, INPUT); 
+}
+void loop() {
+
+digitalWrite(trig, LOW);
+delayMicroseconds(2);
+digitalWrite(trig, HIGH);
+delayMicroseconds(10);
+digitalWrite(trig, LOW);
+duration = pulseIn(echo, HIGH);
+distance= duration*0.034/2;
+if(distance <= 7){
+  digitalWrite(7, HIGH);
+  digitalWrite(8, LOW);
+  delay(10);
+  digitalWrite(7, LOW);
+}
+if(distance >= 7){
+  digitalWrite(7, LOW);
+  digitalWrite(8, HIGH);
+  delay(10);
+  digitalWrite(8, LOW);
+}
+}
