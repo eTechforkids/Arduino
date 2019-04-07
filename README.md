@@ -1,8 +1,8 @@
 # Arduino
 #
-# This is the repo where all of the Aruino projects for eTechforkids.com are stored
+# This is the repo where Arduino projects for eTechforkids.com are stored
 #
-# Please watch for videos to see how the code is used with the Arduino
+# Please watch our videos on our You Tube channel to see how the code is used with the Arduino
 #
 # Good luck on your STEM journey.
 #
